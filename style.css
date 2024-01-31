@@ -74,7 +74,51 @@ body {
     padding: 10px;
 }
 
+button{
+  min-height: 50px;
+  font-size: 20px;
+  font-weight: 100;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #b3b3b3;
+}
+
+button:hover{
+ filter: brightness(110%);
+}
+
+button:active{
+  transform: translateY(1px);
+}
+
+button:focus{
+  outline: none;
+}
+
+.operator{
+  background: grey;
+  color: white;
+  font-size: 25px;
+}
+
+.clear{
+  background: rgb(255, 41, 41);
+  color: white;
+}
+
+.clear:hover{
+  filter: brightness(90%);
+}
+
 .equal-sign {
   grid-column: -2;
   grid-row: 2 / span 4;
+  background:  rgb(54, 218, 54);
+}
+
+@media screen and (max-width: 600px){
+  .calculator{
+    width: 95%;
+  }
 }
